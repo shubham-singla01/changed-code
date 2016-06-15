@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Simple Data Addition</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">  </script>
+    <script>
+		$.ajax
+		({
+		  type: "POST",
+		  url: "http://127.0.0.1:3000/flyttaapi/getinfo/",
+		  crossDomain:true, 
+		  dataType: "json",
+		  data:JSON.stringify({name: "Dennis", address: {city: "Dub", country: "IE"}})
+		 })
+	</script>
+  </head>
+  <body>
+  <h2>Addition of data to database</h2>
+  <pre> 
+This adds data to Mongodb database sent through post request to node js server.
+While opening this file, data is automatically sent to server through Ajax.
+Data Sent is ' name: "Dennis", address: {city: "Dub", country: "IE"} ' in JSON string format.
+It will be stored in database testdata and collection users by default.</pre>
+  </body>
+</html>

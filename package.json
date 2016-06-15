@@ -1,0 +1,11 @@
+{
+  "name": "adding-data-to-database",
+  "description": "adding-data-to-database api",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "mongodb": "*",
+	"http": "*",
+	}
+}
